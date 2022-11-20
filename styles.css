@@ -1,0 +1,95 @@
+body {
+    background-color: #dcd6c9;
+    font-family: sans;
+}
+.wrapper {
+    padding: 10px;
+    display: flex;
+    height: 600px;
+    max-width: 1904px;
+    min-width: 1578px;
+    margin: 0 auto;
+}
+.left {
+    background-color: #d1d1d1;
+    width: 55%;;
+    border: solid 1px #333;
+    padding: 20px;
+}
+.right {
+    width: 40%;
+    display: inline;
+    background-color: #42393a;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45%;
+    margin: 0 auto;
+    width: 55%;
+}
+.btn {
+    padding: 15px;
+    background-color: green;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 3px 3px #555555;
+}
+.orange {
+    background-color: #ff8943;
+}
+.white {
+    background-color: #fff;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+}
+.button {
+    background: #000;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    margin: 5px;
+    box-shadow: 3px 3px #555555;
+    font-size: 25px;
+}
+.voting {
+    width: 63%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-block: 100px 50px;
+}
+.bottom {
+    padding: 10px;
+    display: inline;
+}
+.bottom > p {
+    padding-left: 10px;
+}
+.card {
+    max-width: 270px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+img {
+    height: 300px;
+}
+.number {
+    border: solid 1px black;
+    width: 50px;
+    height: 60px;
+    display: inline-flex;
+}
+.wrap {
+    display: flex;
+}
