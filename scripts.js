@@ -45,10 +45,10 @@ document.querySelectorAll("button[data-action]").forEach(button =>
   onActionClick(button.getAttribute("data-action"))));
 
 function onNumberClick(event) {
-  if (urnValue.length < 2)
+  if (urnValue.length < 2) {
     urnValue += event;
-
-  updateDisplay("number");
+    updateDisplay("number");
+  }
 }
 
 function onActionClick(event) {
