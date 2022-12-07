@@ -6,45 +6,56 @@
         <title>Votação</title>
     </head>
     <body>
-        <div class="wrapper">
-            <div class="left">
+        <div class="wrapper flex p-10 mx-auto">
+            <div class="display p-20">
                 <h1>Seu voto para</h1>
-                <h2>Melhor jogador da copa</h2>
-                <div class="wrap">
-                    <div class="numbers">
-                        <div class="number"></div>
-                        <div class="number"></div>
+                <h2 class="text-center">Melhor jogador da copa</h2>
+                <div id="urn--div--voting-screen" class="flex">
+                    <div class="flex flex-col">
+                        <div class="numbers flex">
+                            <div class="number flex justify-center items-center">
+                                <span id="urn--span--n1"></span>
+                            </div>
+                            <div class="number flex justify-center items-center">
+                                <span id="urn--span--n2"></span>
+                            </div>
+                        </div>
+                        <div class="block">
+                            <p>Nome: <span id="urn--span--player-name"> - </span></p>
+                            <p>País: <span id="urn--span--player-country"> - </span></p>
+                        </div>
                     </div>
-                    <p>Nome: Vini Jr</p>
-                    <p>País: Brasil</p>
-                    <div class="card">
-                        <img src="assets/img/vini-jr.jpeg" alt="Vini Jr">
+                    <div class="block mx-auto">
+                        <img id="urn--img--player-img" src="assets/img/undefined.webp" alt="Foto do Jogador">
                     </div>
                 </div>
-                <div class="bottom">
-                    <hr>
+                <div id="urn--div--the-end-screen" class="hidden">
+                    FIM
+                </div>
+                <hr>
+                <div class="block">
                     <p>Aperte a tecla:</p>
                     <p>CONFIRMA para CONFIRMAR este voto</p>
                     <p>CORRIGE para REINICIAR este voto</p>
                 </div>
             </div>
-            <div class="right">
-                <div class="voting">
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                    <div class="button">4</div>
-                    <div class="button">5</div>
-                    <div class="button">6</div>
-                    <div class="button">7</div>
-                    <div class="button">8</div>
-                    <div class="button">9</div>
-                    <div class="button">0</div>
+            <div class="keyboard flex flex-auto justify-center items-center flex-col">
+                <div class="voting flex justify-center items-center">
+                    <button data-value="1" class="p-10 flex justify-center bg-black text-white w-100">1</button>
+                    <button data-value="2" class="p-10 flex justify-center bg-black text-white w-100">2</button>
+                    <button data-value="3" class="p-10 flex justify-center bg-black text-white w-100">3</button>
+                    <button data-value="4" class="p-10 flex justify-center bg-black text-white w-100">4</button>
+                    <button data-value="5" class="p-10 flex justify-center bg-black text-white w-100">5</button>
+                    <button data-value="6" class="p-10 flex justify-center bg-black text-white w-100">6</button>
+                    <button data-value="7" class="p-10 flex justify-center bg-black text-white w-100">7</button>
+                    <button data-value="8" class="p-10 flex justify-center bg-black text-white w-100">8</button>
+                    <button data-value="9" class="p-10 flex justify-center bg-black text-white w-100">9</button>
+                    <button data-value="0" class="p-10 flex justify-center bg-black text-white w-100">0</button>
                 </div>
-                <div class="buttons">
-                    <div class="btn white">branco</div>
-                    <div class="btn orange">corrige</div>
-                    <div class="btn green">confirma</div>
+                <div class="actions flex justify-center items-center">
+                    <button data-action="white" class="p-15 bg-white">branco</button>
+                    <button data-action="clear" class="p-15 bg-orange">corrige</button>
+                    <button data-action="confirm" class="p-15 bg-green text-white">confirma</button>
                 </div>
             </div>
         </div>
